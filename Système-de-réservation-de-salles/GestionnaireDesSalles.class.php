@@ -2,7 +2,7 @@
 
 require_once "./Salle.class.php";
 
-class GestionnaireSalles extends Salle{
+class GestionnaireSalles{
     private $listeSalles = [];
 
     public function ajouterSalle(Salle $salle) {

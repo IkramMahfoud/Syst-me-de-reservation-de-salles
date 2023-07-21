@@ -1,6 +1,7 @@
 <?php
-require_once "./Salle.class.php";
-require_once "./Utilisateur.class.php";
+
+require_once "./GestionnaireSalles.class.php";
+require_once "./GestionnaireReservations.class.php";
 
 class Utilisateur {
   public function consulterDisponibilite(GestionnaireSalles $gestionnaireSalle,$salleId) {

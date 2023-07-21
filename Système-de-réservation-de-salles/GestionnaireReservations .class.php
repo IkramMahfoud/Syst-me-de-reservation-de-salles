@@ -1,10 +1,7 @@
 <?php
 
-require_once "./Salle.class.php";
-
 class GestionnaireReservations {
     private $listeReservations = [];
-
 
     public function ajouterReservation($salleId) {
         $reservation = "this salle is reserved : " . $salleId;
@@ -26,9 +23,3 @@ class GestionnaireReservations {
     }
 
 }
-
-$gestionnaireSalles = new GestionnaireSalles();
-$gestionnaireSalles->ajouterSalle(1, "Salle A", 10, false);
-$gestionnaireSalles->ajouterSalle(2, "Salle B", 8, true);
-$gestionnaireSalles->modifierSalle(1, "Salle A", 15, false);
-$gestionnaireSalles->consulterDisponibilite(new Utilisateur());

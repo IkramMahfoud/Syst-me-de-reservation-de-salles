@@ -1,7 +1,7 @@
 <?php
-require_once "./Utilisateur.class.php";
+require_once "./GestionnaireSalles.class.php";
+require_once "./GestionnaireReservations.class.php";
 require_once "./Salle.class.php";
-
 
 class Administrateur {
     public function ajouterSalle(GestionnaireSalles $gestionnaireSalle,$id, $nom, $capacite, $disponibilite) {
